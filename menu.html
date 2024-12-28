@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Year's Menu</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      background-color: #001a4d; /* Deep blue */
+      color: white;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      overflow: hidden; /* Prevent scrolling caused by animations */
+    }
+    .menu {
+      padding: 50px 20px;
+      z-index: 10;
+      position: relative;
+    }
+    .title {
+      font-size: 3rem;
+      margin-bottom: 40px;
+    }
+    .section {
+      font-size: 2rem;
+      margin-top: 30px;
+    }
+    .item {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+    /* Divider styling */
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .divider::before,
+    .divider::after {
+      content: '';
+      flex: 1;
+      border-top: 1px solid white;
+      margin: 0 10px;
+    }
+    .divider span {
+      font-size: 1.5rem;
+      color: white;
+      opacity: 0.8;
+    }
+    /* Snowflake styling */
+    .snowflake {
+      position: absolute;
+      color: white;
+      opacity: 0.8;
+      animation: fall linear infinite;
+    }
+    @keyframes fall {
+      0% {
+        transform: translateY(-100px);
+      }
+      100% {
+        transform: translateY(110vh);
+      }
+    }
+     /* Generate multiple snowflakes with varying sizes and speeds */
+     .snowflake:nth-child(1) { left: 5%; font-size: 1.5rem; animation-duration: 8s; animation-delay: 0s; }
+    .snowflake:nth-child(2) { left: 20%; font-size: 2rem; animation-duration: 10s; animation-delay: 2s; }
+    .snowflake:nth-child(3) { left: 1rem; font-size: 1rem; animation-duration: 6s; animation-delay: 1s; }
+    .snowflake:nth-child(4) { left: 50%; font-size: 3rem; animation-duration: 12s; animation-delay: 3s; }
+    .snowflake:nth-child(5) { left: 65%; font-size: 1.2rem; animation-duration: 7s; animation-delay: 0.5s; }
+    .snowflake:nth-child(6) { left: 80%; font-size: 2.5rem; animation-duration: 11s; animation-delay: 4s; }
+    .snowflake:nth-child(7) { left: 90%; font-size: 0.8rem; animation-duration: 5s; animation-delay: 1.5s; }
+    .snowflake:nth-child(8) { left: 15%; font-size: 2.2rem; animation-duration: 9s; animation-delay: 1s; }
+    .snowflake:nth-child(9) { left: 45%; font-size: 1.8rem; animation-duration: 7s; animation-delay: 2s; }
+    .snowflake:nth-child(10) { left: 75%; font-size: 1rem; animation-duration: 6s; animation-delay: 3s; }
+  </style>
+</head>
+<body>
+  <!-- Snowflake elements -->
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+
+  <!-- Menu Content -->
+  <div class="menu">
+    <div class="title">New Year's Menu</div>
+
+    <div class="section">Appetizer</div>
+    <div class="item">Tapenade on Baguette Toast with side of Carrots, Cucumber, Cauliflower, and Radishes</div>
+    <div class="divider"><span>✧</span></div>
+
+    <div class="section">Starter</div>
+    <div class="item">Scarpaccia - A rustic Italian zucchini tart with crispy edges and a soft center.</div>
+    <div class="divider"><span>✧</span></div>
+
+    <div class="section">Main Course</div>
+    <div class="item">Bourguignon of Mushrooms - A rich, hearty stew made with mushrooms, red wine, and herbs.</div>
+    <div class="divider"><span>✧</span></div>
+
+    <div class="section">Dessert</div>
+    <div class="item">Fruit Sorbet and Non-Vegan Chocolate Fondant</div>
+    <div class="divider"><span>✧</span></div>
+
+    <div class="section">Drinks</div>
+    <div class="item">Water, Wine, Tea, and Hot Chocolate</div>
+  </div>
+</body>
+</html>
