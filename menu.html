@@ -12,23 +12,24 @@
       margin: 0;
       padding: 0;
       text-align: center;
-      overflow: hidden; /* Prevent scrolling caused by animations */
+      height: 100vh; /* Full viewport height */
+      overflow-y: auto; /* Enable vertical scrolling */
     }
     .menu {
-      padding: 50px 20px;
+      padding: 20px;
       z-index: 10;
       position: relative;
     }
     .title {
-      font-size: 3rem;
-      margin-bottom: 40px;
+      font-size: 2.5rem; /* Adjusted for smaller screens */
+      margin-bottom: 30px;
     }
     .section {
-      font-size: 2rem;
+      font-size: 1.8rem; /* Adjusted for smaller screens */
       margin-top: 30px;
     }
     .item {
-      font-size: 1.2rem;
+      font-size: 1rem; /* Adjusted for smaller screens */
       margin: 10px 0;
     }
     /* Divider styling */
@@ -46,7 +47,7 @@
       margin: 0 10px;
     }
     .divider span {
-      font-size: 1.5rem;
+      font-size: 1.2rem; /* Adjusted for smaller screens */
       color: white;
       opacity: 0.8;
     }
@@ -65,8 +66,8 @@
         transform: translateY(110vh);
       }
     }
-     /* Generate multiple snowflakes with varying sizes and speeds */
-     .snowflake:nth-child(1) { left: 5%; font-size: 1.5rem; animation-duration: 8s; animation-delay: 0s; }
+    /* Generate multiple snowflakes with varying sizes and speeds */
+    .snowflake:nth-child(1) { left: 5%; font-size: 1.5rem; animation-duration: 8s; animation-delay: 0s; }
     .snowflake:nth-child(2) { left: 20%; font-size: 2rem; animation-duration: 10s; animation-delay: 2s; }
     .snowflake:nth-child(3) { left: 1rem; font-size: 1rem; animation-duration: 6s; animation-delay: 1s; }
     .snowflake:nth-child(4) { left: 50%; font-size: 3rem; animation-duration: 12s; animation-delay: 3s; }
@@ -96,7 +97,7 @@
     <div class="title">New Year's Menu</div>
 
     <div class="section">Appetizer</div>
-    <div class="item">Tapenade on Baguette Toast with side of Carrots, Cucumber, Cauliflower, and Radishes</div>
+    <div class="item">Tapenade on Baguette Toast with a side Carrots, Cucumber, Cauliflower, and Radishes</div>
     <div class="divider"><span>✧</span></div>
 
     <div class="section">Starter</div>
